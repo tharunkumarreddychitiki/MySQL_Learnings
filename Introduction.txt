@@ -1,0 +1,85 @@
+Before starting the SQL. We should know about the basics of data and DBMS. 
+
+Data : Data is the raw fact which describes the attributes or properties of an object.
+
+Attributes : Attribute is a property of an Entity or Object.
+
+Entity : Anything that physically exists is called an Entity or Object.
+
+For Example : Student name is Ganesh. 
+    In this,
+     Student is the entity.
+     Name is the property of the student(Entity).
+     And "Ganesh" is the data(that describes the property of the entity).
+
+
+DataBase : A DataBase is a place where the data is stored in an organized and systematic manner/way.
+The basic operations that can be performed on DataBase are 
+        C - Create/Insert
+        R - Read/Retrieve 
+        U - Update/Modify
+        D - Delete/Drop
+It is also known as "CRUD" operations.
+
+DataBase Management System(DBMS) :
+    --> DBMS is a software which maintains and manage the DataBase.
+    --> It provides two important features.
+            - Security(Protection)
+            - Authorization(Verification)
+    --> To communicate with DBMS. We usse a language called "Query Language".
+
+There are 4 types of DBMS : 
+- Network DBMS.
+- Object Oriented DBMS.
+- hierarchial DBMS.
+-Relational DBMS(RDBMS)
+
+Relational DBMS(RDBMS) :
+    Relational DBMS is a type of DBMS software that stores data in the form of Tables or Relations(Rows & Columns).
+    The RDBMS follows EF Codd rules. 
+    In RDBMS, we can store meta data.
+    The language that is used to communicate with RDBMS is called "Structured Query Language".
+
+E.F. Codd Rules :
+1. The Data that is stored in a cell must be a single value Data.
+2. We can store data in multiple tables and we can establish connection between any two tables.
+3. We can assign Datatypes and Constraints to validate the Data.
+4. Datatypes are mandatory while constraints are optional.
+
+Data Types :
+There are % data types in SQL :
+1. CHAR : It is used to store characters such as Uppercase,Lowercase, special Characters and  0-9 digits. 
+        In this type we can store maximum of 2000 characters.
+        In CHAR Datatype the unused  memory cannot be returned to the memory location that leads to the wastage of memory.
+
+2. VARCHAR : The VARCHAR is same as CHAR but the unused memory gets separated and will be reused. Hence there is no wastage of memory.
+             VARCHAR2 is the Updated version of VARCHAR where it can store upto a maximum of 4000 characters.
+
+3. Large Objects(LOB)
+    i. Character Large Objects(CLOB) : 
+        -- It is used to store large amount of characters.
+        -- It can store upto 4GB.
+    ii. Binary Large Objects(BLOB) :
+        -- It is used to store Binary objects such as Audio, Video, Images,PDFs, DOCs etc. in the form Binary data.
+        -- There is no limit for the storage size.
+
+4. Date : It is used to store the dates.
+    Formate : DD-MM-YYYY or DD-MON-YYYY
+
+5. Number :  It is used to store Number.
+    Precision : Used to store whole numbers.
+    Scale : Used to store decimals.
+
+
+Constraints : It is a rule or condition that is given to a Column.
+There are 5 types of constraints.
+1. Unique Constraint : This is used to avoid entering duplicate values in the cell.
+
+2. Not Null Constraint : It is used to avod the null values that are entered in the cells.
+
+3. Check Constraint : It is used to provide a user defined condtion or custom condtion to the Column.
+
+4. Primary Key Constraint : It is used to Uniquely identify the recoords from the table. 
+    It is a combination of Unique and not null constraints.
+
+5. Foreign Key Constraint : It is used to establish connectioon between multiple tables. 
